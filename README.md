@@ -1,41 +1,31 @@
 # Desafio Estágio da Convergence Works
 
-Gosta de novas tecnologias e de desafios? Tem espírito de equipe e é comprometido? Você gostaria de colocar tudo isto em prática em uma empresa?
+## Tecnologias Utilizadas
 
-## Quem somos?
-Somos a Convergence Works, somos a convergência entre os desafios das empresas e as ideias pra vencê-los. Desenvolvemos plataformas para o mundo digital, com foco em comunicação. Somos especialistas na criação de sites e aplicativos para plataformas de comunicação. Integramos sistema de gestão de conteúdo, aplicativo, disparo de email, solução para clube de assinantes, implantação de editoriais em múltiplas plataformas.
+### FrontEnd
+* [![html](https://img.shields.io/static/v1?label=&message=HTML&color=9B0A00&style=flat&logo=html5)](https://github.com/LucasLima337)
+[![css](https://img.shields.io/static/v1?label=&message=CSS&color=1572B6&style=flat&logo=css3)](https://github.com/LucasLima337)
 
-## A Vaga
-Para se candidatar:  
+* [![jquery](https://img.shields.io/static/v1?label=&message=jQuery&color=0769AD&style=flat&logo=jQuery)](https://github.com/LucasLima337)
+[![bootstrap](https://img.shields.io/static/v1?label=&message=Bootstrap&color=563D7C&style=flat&logo=Bootstrap)](https://github.com/LucasLima337)
 
-- Conhecimento em programação (PHP, JavaScript ou outras)
-- Noções de desenvolvimento de software
-- Conhecimentos em Git
-- Conhecimentos em Http
-- Capacidade de comunicação, comprometimento e vontade de pôr a mão na massa;
-- Capacidade de aprender rapidamente tecnologias emergentes.
+### Backend
+* [![php](https://img.shields.io/static/v1?label=&message=PHP&color=6a0db6&style=flat&logo=PHP)](https://github.com/LucasLima337)
 
-Benefícios
-- Excelente ambiente de trabalho 
-- Oportunidade de crescimento e contratação
+---
 
-## O Desafio
-Para avaliar seu desempenho temos um desafio para você.
+## Fonte de dados RSS consumida
+**Link**: [Correio 24 Horas](https://www.correio24horas.com.br/rss/)
 
-Você deverá fazer um fork deste repositório, e desenvolver uma api de notícias acessível. A aplicação deverá consumir a seguinte fonte de dados RSS [https://www.correio24horas.com.br/rss/] e entregar as notícias no formato json, permitindo as seguintes funcionalidades:
+---
 
-- Ordenação: As notícias deverão ser ordenadas por ordem crescente e decrescente a partir dos sequintes campos: pubDate e title
-- Filtro de Categoria: Filtrar pelo campo de categoria (category)
-- Filtro de limite: Limitar um número máximo de notícias (aceitar valores de 1 até 20)
-- Filtro básico: Apenas deverá ser entregue os seguintes campos das notícias: title, description e pubDate.
+## Parâmetros GET Utilizados
+* Foram utilizados os seguintes parâmetros com as seguintes opções:
 
-Ps: Os filtros e ordenações deverão ser passados por parametro GET e documentados no README.md do projeto Git.
-
-Bonus: Filtro de busca textual.
-
-## Critérios de Avaliação
-
-- Organização
-- Semântica
-- Decisões Técnicas
-- Ferramentas Utilizadas
+Parâmetro | Nome Utilizado | Opções 
+----------|----------------|-------
+Filtro    | filtro         | normal e basico 
+Quantidade de notícias | qnt | 1 a 20 
+Ordenação Por | ordPor | Normal, Título e Data
+Ordenação | ord | Normal, Crescente e Decrescente
+Categorias | cat | Lista de categorias
