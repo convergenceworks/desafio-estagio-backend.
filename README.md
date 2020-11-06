@@ -26,6 +26,6 @@ Parâmetro | Nome Utilizado | Opções
 ----------|----------------|-------
 Filtro    | filtro         | normal e basico 
 Quantidade de notícias | qnt | 1 a 20 
-Ordenação Por | ordPor | Normal, Título e Data
-Ordenação | ord | Normal, Crescente e Decrescente
+Ordenação Por | ordPor | normal, titulo e data
+Ordenação | ord | normal, crescente e decrescente
 Categorias | cat | Lista de categorias
