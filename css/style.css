@@ -1,0 +1,31 @@
+body {
+    margin: 10px;
+    margin-top: 100px;
+}
+
+.cor-letra {
+    color: white;
+}
+
+.fix-padding {
+    padding: 15px;
+}
+
+.fix-alinhar {
+    align-items: center;
+}
+
+.fix-alinhar2 {
+    margin-top: 20px;
+}
+
+.fix-alinhar3 {
+    align-items: center;
+    margin-right: 40px;
+    margin-top: 4px;
+}
+
+.category {
+    font-weight: bold;
+    color: #38444e;
+}
