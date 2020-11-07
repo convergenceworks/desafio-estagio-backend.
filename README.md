@@ -1,41 +1,40 @@
-# Desafio Estágio da Convergence Works
+# Desafio estágio back-end
+## Api que consome as noticias do site [https://www.correio24horas.com.br/rss/]
 
-Gosta de novas tecnologias e de desafios? Tem espírito de equipe e é comprometido? Você gostaria de colocar tudo isto em prática em uma empresa?
+# Inicialização do projeto
+Após realizar o download do projeto é necessário realizar o update do composer para que o mesmo possa baixar todas as depêndecias necessárias.
+Feito a instalação do composer, iniciliaze o servidor web com o próprio PHP utilizando o comando **php -S localhost:3000**.
 
-## Quem somos?
-Somos a Convergence Works, somos a convergência entre os desafios das empresas e as ideias pra vencê-los. Desenvolvemos plataformas para o mundo digital, com foco em comunicação. Somos especialistas na criação de sites e aplicativos para plataformas de comunicação. Integramos sistema de gestão de conteúdo, aplicativo, disparo de email, solução para clube de assinantes, implantação de editoriais em múltiplas plataformas.
+#### Códigos de erros
+Código | Descrição
+-------|----------
+404    | Rota ou recurso inválido
+405| Método não encontrado
 
-## A Vaga
-Para se candidatar:  
+#### Ambiente
+Substituir a porta 3000 pela porta definida ao subir o servidor
 
-- Conhecimento em programação (PHP, JavaScript ou outras)
-- Noções de desenvolvimento de software
-- Conhecimentos em Git
-- Conhecimentos em Http
-- Capacidade de comunicação, comprometimento e vontade de pôr a mão na massa;
-- Capacidade de aprender rapidamente tecnologias emergentes.
+Ambiente | URL
+-------|----------
+Teste| http://localhost:3000/noticia
 
-Benefícios
-- Excelente ambiente de trabalho 
-- Oportunidade de crescimento e contratação
+#### /noticia
 
-## O Desafio
-Para avaliar seu desempenho temos um desafio para você.
+Retorna todas as notícias do site [https://www.correio24horas.com.br/].
 
-Você deverá fazer um fork deste repositório, e desenvolver uma api de notícias acessível. A aplicação deverá consumir a seguinte fonte de dados RSS [https://www.correio24horas.com.br/rss/] e entregar as notícias no formato json, permitindo as seguintes funcionalidades:
+Nome | Descrição
+-------|----------
+Endpoint| /noticia
+Method| GET
 
-- Ordenação: As notícias deverão ser ordenadas por ordem crescente e decrescente a partir dos sequintes campos: pubDate e title
-- Filtro de Categoria: Filtrar pelo campo de categoria (category)
-- Filtro de limite: Limitar um número máximo de notícias (aceitar valores de 1 até 20)
-- Filtro básico: Apenas deverá ser entregue os seguintes campos das notícias: title, description e pubDate.
+#### Campos|Parâmetros
 
-Ps: Os filtros e ordenações deverão ser passados por parametro GET e documentados no README.md do projeto Git.
-
-Bonus: Filtro de busca textual.
-
-## Critérios de Avaliação
-
-- Organização
-- Semântica
-- Decisões Técnicas
-- Ferramentas Utilizadas
+Nome | valor| Descrição| Tipo | Exemplo
+-----|-------------|----------|-----|---
+order| title:asc| Ordena as notícias através do titulo de forma ascendente| string|http://localhost:3000/noticia?order=title:asc
+order| title:desc| Ordena as notícias através do titulo de forma descendente| string|http://localhost:3000/noticia?order=title:desc
+order| title:asc| Ordena as notícias através da data de forma ascendente| string|http://localhost:3000/noticia?order=date:asc
+order| title:asc| Ordena as notícias através da data de forma descendente| string|http://localhost:3000/noticia?order=date:desc
+category| categorias disponiveis no feed| Lista dados da categoria selecionada| string|http://localhost:3000/noticia?category=categoriaaqui
+limit| 1-20 | Limita a quantidade de noticias entregues de acordo ao que for parametrizado| int |http://localhost:3000/noticia?limit=5
+filter| basic | Limita os campos que serão entregues| string |http://localhost:3000/noticia?filter=basic

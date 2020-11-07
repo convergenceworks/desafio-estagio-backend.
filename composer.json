@@ -1,0 +1,31 @@
+{
+  "name": "davidribeiro05/xmlapi",
+  "description": "Desafio estágio backend.",
+  "minimum-stability": "alpha",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "David Ribeiro",
+      "email": "david.ribeiro05@gmail.com",
+      "homepage": "https://www.linkedin.com/in/davidribeiro05/",
+      "role": "Developer"
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "Src\\": "src/"
+    },
+    "files": [
+    "src/helpers.php"
+    ]
+  },
+  "require": {
+    "php": "^7.4",
+    "ext-json": "*",
+    "ext-mbstring": "*",
+    "ext-simplexml": "*"
+  }
+}
